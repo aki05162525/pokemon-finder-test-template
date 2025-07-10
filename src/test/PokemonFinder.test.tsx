@@ -8,5 +8,13 @@ describe(PokemonFinder, () => {
     expect(screen.getByText("ポケモンファインダー")).toBeInTheDocument();
 
     expect(screen.getByText("ポケモンを見つける")).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: "ポケモンを見つける" })
+    ).toBeInTheDocument(); //nameを付ければボタンを定められる
+    expect(screen.getByRole("button", { name: "test" })).toBeInTheDocument();
+
+    expect(
+      screen.getByPlaceholderText("ポケモンのIDを入力")
+    ).toBeInTheDocument();
   });
 });

@@ -31,6 +31,7 @@ const PokemonFinder = () => {
         placeholder="ポケモンのIDを入力"
       />
       <button onClick={fetchPokemonById}>ポケモンを見つける</button>
+      <button onClick={fetchPokemonById}>test</button>
       {error && <div>{error}</div>}
       {pokemon && (
         <div>
