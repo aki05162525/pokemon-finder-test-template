@@ -20,6 +20,11 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "types":[
+    "vitest/globals",
+    "@testing-library/jest-dom/vitest",
+    "node"
+  ],
+  "include": ["src", "vitest-setup.ts", "vitest.config.ts", "vite.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
